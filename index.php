@@ -881,10 +881,16 @@
             include 'controller/read-queue-list.php';
             include 'view/merchant-queue-list.php';
         }
-
+				<!-- Created by Edi -->
+				if($_GET['page'] == "item-detail"){
+            include 'controller/read-item-detail.php';
+            include 'view/item-detail.php';
+        }
     } 
+		<!-- Updated by Edi -->
     else {
-        echo "GOOD MORNING!";
+        include 'controller/read-product.php';
+        include 'view/index.php';
     }
 ?>
         </div>
@@ -919,6 +925,18 @@
     <?php
         if($_GET['page'] == "products"):?>
         <script type="text/javascript" src="<?php echo $host?>asset/javascript/backend/tables/default.js"></script>
+    <?php
+        endif?>
+		<!---Created by Edi--->
+    <?php
+        if ($_GET['page'] == "item-detail"):?>
+        <script type="text/javascript" src="<?php echo $host?>/asset/plugins/smoothscroll/js/smoothscroll.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/plugins/layerslider/js/greensock.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/plugins/layerslider/js/layerslider.transitions.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/plugins/layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/plugins/touchspin/js/jquery.bootstrap-touchspin.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/javascript/frontend/shop/shop-item-detail.js"></script>
+
     <?php
         endif?>
 <?php
