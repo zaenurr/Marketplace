@@ -1,6 +1,6 @@
 <?php
     require_once 'model/connect.php';
-	$host = 'http://192.168.64.2/marketplace/';
+	$host = 'http://192.168.64.2/Marketplace/';
 ?>
 <!DOCTYPE html>
 <html class="backend">

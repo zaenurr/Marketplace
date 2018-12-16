@@ -1,6 +1,5 @@
 <?php
     foreach ($statement as $row):?> 
-
             <!-- START Item Detail -->
             <section class="section bgcolor-white">
                 <div class="container">

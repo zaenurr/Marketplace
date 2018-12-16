@@ -1,17 +1,12 @@
-
                 <div class="row">
                     <div class="col-md-12">
                         <!-- START panel -->
-
                         <div class="panel panel-primary">
                             <!-- panel heading/header -->
                             <div class="panel-heading">
                                 <h3 class="panel-title"><span class="panel-icon mr5"><i class="ico-table22"></i></span> Table Showcase</h3>
-                                
                             </div>
-                            <!--/ panel heading/header -->
-                            
-
+                            <!--/ panel heading/header -->       
                             <!-- panel body with collapse capabale -->
                             <div class="table-responsive panel-collapse pull out" style="min-height: 200px">
                                 <table class="table table-bordered table-hover" id="table1" >
@@ -29,8 +24,7 @@
                                     <tbody>
 <?php
     $no = 1;
-    foreach ($statement as $row):    
-?>
+    foreach ($statement as $row): ?>
                                         <tr>
                                             <td><?php echo $no++?></td>
                                             <td><div class="media-object"><img src="<?php echo $host?>asset/image/avatar/avatar.png" alt="" class="img-circle"></div>
@@ -38,14 +32,13 @@
                                             <td><?php echo $row["id"]?></td>
                                             <td><?php echo $row["Customer_Name"]?></td>
                                             <td>
-                                                <?php
-                                                    $id_cart = $row["id"];
-                                                    $statement_order = $pdo->query("SELECT products.name AS Product_Name, orders.quantity AS Order_Quantity FROM orders, products WHERE orders.id_product = products.id AND orders.id_cart = $id_cart")->fetchAll();
-                                                    foreach ($statement_order as $row_order):
-
-                                                    echo "product name : " . $row_order["Product_Name"] . " x" . $row_order["Order_Quantity"] . "<br>"?>
-                                                <?php
-                                                endforeach?>
+    <?php
+        $id_cart = $row["id"];
+        $statement_order = $pdo->query("SELECT products.name AS Product_Name, orders.quantity AS Order_Quantity FROM orders, products WHERE orders.id_product = products.id AND orders.id_cart = $id_cart")->fetchAll();
+        
+        foreach ($statement_order as $row_order):
+            echo "product name : " . $row_order["Product_Name"] . " x" . $row_order["Order_Quantity"] . "<br>"?>
+    <?php endforeach?>
                                             </td>      
                                             <td>
                                                 <div class="progress progress-xs nm">
@@ -71,10 +64,7 @@
                                                 <!--/ button toolbar -->
                                             </td>
                                         </tr>
-<?php
-    endforeach?>
-                                        
-                                        
+<?php endforeach?>                       
                                     </tbody>
                                 </table>
                             </div>
