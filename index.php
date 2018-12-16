@@ -1,6 +1,6 @@
 <?php
     require_once 'model/connect.php';
-	$host = 'http://192.168.64.2/mart/';
+	$host = 'http://192.168.64.2/marketplace/';
 ?>
 <!DOCTYPE html>
 <html class="backend">
@@ -876,19 +876,17 @@
             include 'model/brand.php';
             include 'view/product-create.php';
         }
-	// Created by zaenur
+        // Created by zaenur
         if ($_GET['page'] == "queue-list") {
             include 'controller/read-queue-list.php';
             include 'view/merchant-queue-list.php';
         }
-				<!-- Created by Edi -->
-				if($_GET['page'] == "item-detail"){
+		// Created by Edi
+		if($_GET['page'] == "item-detail"){
             include 'controller/read-item-detail.php';
             include 'view/item-detail.php';
         }
-    } 
-		<!-- Updated by Edi -->
-    else {
+    } else { // Updated by Edi
         include 'controller/read-product.php';
         include 'view/index.php';
     }
@@ -927,7 +925,7 @@
         <script type="text/javascript" src="<?php echo $host?>asset/javascript/backend/tables/default.js"></script>
     <?php
         endif?>
-		<!---Created by Edi--->
+		<!-- Created by Edi -->
     <?php
         if ($_GET['page'] == "item-detail"):?>
         <script type="text/javascript" src="<?php echo $host?>/asset/plugins/smoothscroll/js/smoothscroll.js"></script>
