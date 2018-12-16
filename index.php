@@ -876,6 +876,11 @@
             include 'model/brand.php';
             include 'view/product-create.php';
         }
+	// Created by zaenur
+        if ($_GET['page'] == "queue-list") {
+            include 'controller/read-queue-list.php';
+            include 'view/merchant-queue-list.php';
+        }
 
     } 
     else {
