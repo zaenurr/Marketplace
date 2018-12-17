@@ -54,15 +54,17 @@
         <!-- END STYLESHEETS -->
     </head>
     <!--/ END Head -->
-
+<?php
+    $id = $_GET['id'];
+?>
     <!-- START Body -->
     <body>
         <!-- START Template Header -->
-        <header id="header" class="navbar">
+        <header id="header" class="navbar" >
             <!-- START navbar header -->
-            <div class="navbar-header">
+            <div class="navbar-header" style="background-color: #a6e0cc">
                 <!-- Brand -->
-                <a class="navbar-brand bgcolor-white" href="<?php echo $host?>">
+                <a class="navbar-brand text-default bold" href="<?php echo $host?>">
                     PRESIDENT MART
                 </a>
                 <!--/ Brand -->
@@ -70,7 +72,7 @@
             <!--/ END navbar header -->
 
             <!-- START Toolbar -->
-            <div class="navbar-toolbar clearfix">
+            <div class="navbar-toolbar clearfix" style="background-color: #a6e0cc">
                 <!-- START Left nav -->
                 <ul class="nav navbar-nav navbar-left">
                     <!-- Sidebar shrink -->
@@ -422,7 +424,7 @@
                     <li>
 <?php
     endif?>
-                        <a href="<?php echo $host?>index.php?page=dashboard" data-toggle="submenu" data-parent=".topmenu">
+                        <a href="<?php echo $host?>/?page=dashboard" data-toggle="submenu" data-parent=".topmenu">
                             <span class="figure"><i class="ico-dashboard2"></i></span>
                             <span class="text">Dashboard</span>
                             <span class="arrow"></span>
@@ -436,7 +438,7 @@
                     <li>
 <?php
     endif?>
-                        <a href="<?php echo $host?>index.php?page=products" data-toggle="submenu" data-parent=".topmenu">
+                        <a href="<?php echo $host?>/?page=products" data-toggle="submenu" data-parent=".topmenu">
                             <span class="figure"><i class="ico-dashboard2"></i></span>
                             <span class="text">Products</span>
                             <span class="arrow"></span>
