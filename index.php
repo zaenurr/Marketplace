@@ -7,6 +7,7 @@
     <!-- START Head -->
     <head>
         <!-- START META SECTION -->
+        <a href="login/login.php"><button>Go To Login</button></a>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>President Mart</title>
@@ -891,6 +892,11 @@
 		if($_GET['page'] == "item-detail"){
             include 'controller/read-item-detail.php';
             include 'view/item-detail.php';
+        }
+	    // Created by Edi
+        if($_GET['page'] == "shopping-cart"){
+            include 'controller/read-shopping-cart.php';
+            include 'view/shopping-cart.php';
         }
     } else { // Updated by Edi
         include 'controller/read-product.php';
