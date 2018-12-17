@@ -894,6 +894,11 @@
             include 'controller/read-item-detail.php';
             include 'view/item-detail.php';
         }
+	    // Created by Edi
+        if($_GET['page'] == "shopping-cart"){
+            include 'controller/read-shopping-cart.php';
+            include 'view/shopping-cart.php';
+        }
     } else { // Updated by Edi
         include 'controller/read-product.php';
         include 'view/index.php';
