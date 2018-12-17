@@ -1,6 +1,6 @@
 <?php
     require_once 'model/connect.php';
-	$host = 'http://192.168.64.2/Marketplace/';
+	$host = "http://".$_SERVER['HTTP_HOST']."/Marketplace";
 ?>
 <!DOCTYPE html>
 <html class="backend">
@@ -14,7 +14,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-        <link rel="shortcut icon" href="<?php echo $host?>asset/image/favicon.ico">
+        <link rel="shortcut icon" href="<?php echo $host?>/asset/image/favicon.ico">
         <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
@@ -40,16 +40,16 @@
         <!--/ Plugins stylesheet : optional -->
 
         <!-- Application stylesheet : mandatory -->
-        <link rel="stylesheet" href="<?php echo $host?>asset/stylesheet/bootstrap.css">
-        <link rel="stylesheet" href="<?php echo $host?>asset/stylesheet/layout.css">
-        <link rel="stylesheet" href="<?php echo $host?>asset/stylesheet/uielement.css">
+        <link rel="stylesheet" href="<?php echo $host?>/asset/stylesheet/bootstrap.css">
+        <link rel="stylesheet" href="<?php echo $host?>/asset/stylesheet/layout.css">
+        <link rel="stylesheet" href="<?php echo $host?>/asset/stylesheet/uielement.css">
         <!--/ Application stylesheet -->
 
         <!-- Theme stylesheet : optional -->
         <!--/ Theme stylesheet : optional -->
 
         <!-- modernizr script -->
-        <script type="text/javascript" src="<?php echo $host?>asset/plugins/modernizr/js/modernizr.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/plugins/modernizr/js/modernizr.js"></script>
         <!--/ modernizr script -->
         <!-- END STYLESHEETS -->
     </head>
@@ -107,7 +107,7 @@
                             {{#data}}
                             <a href="page-message-rich.html" class="media border-dotted new">
                                 <span class="pull-left">
-                                    <img src="<?php echo $host?>asset/image/avatar/{{picture}}" class="media-object img-circle" alt="">
+                                    <img src="<?php echo $host?>/asset/image/avatar/{{picture}}" class="media-object img-circle" alt="">
                                 </span>
                                 <span class="media-body">
                                     <span class="media-heading">{{name}}</span>
@@ -148,7 +148,7 @@
                                 <div class="media-list">
                                     <a href="page-message-rich.html" class="media border-dotted read">
                                         <span class="pull-left">
-                                            <img src="<?php echo $host?>asset/image/avatar/avatar1.jpg" class="media-object img-circle" alt="">
+                                            <img src="<?php echo $host?>/asset/image/avatar/avatar1.jpg" class="media-object img-circle" alt="">
                                         </span>
                                         <span class="media-body">
                                             <span class="media-heading">Martina Poole</span>
@@ -163,7 +163,7 @@
 
                                     <a href="page-message-rich.html" class="media border-dotted read">
                                         <span class="pull-left">
-                                            <img src="<?php echo $host?>asset/image/avatar/avatar3.jpg" class="media-object img-circle" alt="">
+                                            <img src="<?php echo $host?>/asset/image/avatar/avatar3.jpg" class="media-object img-circle" alt="">
                                         </span>
                                         <span class="media-body">
                                             <span class="media-heading">Walter Foster</span>
@@ -177,7 +177,7 @@
 
                                     <a href="page-message-rich.html" class="media border-dotted read">
                                         <span class="pull-left">
-                                            <img src="<?php echo $host?>asset/image/avatar/avatar4.jpg" class="media-object img-circle" alt="">
+                                            <img src="<?php echo $host?>/asset/image/avatar/avatar4.jpg" class="media-object img-circle" alt="">
                                         </span>
                                         <span class="media-body">
                                             <span class="media-heading">Callum Santosr</span>
@@ -190,7 +190,7 @@
 
                                     <a href="page-message-rich.html" class="media border-dotted read">
                                         <span class="pull-left">
-                                            <img src="<?php echo $host?>asset/image/avatar/avatar5.jpg" class="media-object img-circle" alt="">
+                                            <img src="<?php echo $host?>/asset/image/avatar/avatar5.jpg" class="media-object img-circle" alt="">
                                         </span>
                                         <span class="media-body">
                                             <span class="media-heading">Noelani Blevins</span>
@@ -203,7 +203,7 @@
 
                                     <a href="page-message-rich.html" class="media border-dotted read">
                                         <span class="pull-left">
-                                            <img src="<?php echo $host?>asset/image/avatar/avatar8.jpg" class="media-object img-circle" alt="">
+                                            <img src="<?php echo $host?>/asset/image/avatar/avatar8.jpg" class="media-object img-circle" alt="">
                                         </span>
                                         <span class="media-body">
                                             <span class="media-heading">Carl Johnson</span>
@@ -217,7 +217,7 @@
 
                                     <a href="page-message-rich.html" class="media border-dotted read">
                                         <span class="pull-left">
-                                            <img src="<?php echo $host?>asset/image/avatar/avatar9.jpg" class="media-object img-circle" alt="">
+                                            <img src="<?php echo $host?>/asset/image/avatar/avatar9.jpg" class="media-object img-circle" alt="">
                                         </span>
                                         <span class="media-body">
                                             <span class="media-heading">Tamara Moon</span>
@@ -360,7 +360,7 @@
                     <li class="dropdown profile">
                         <a href="javascript:void(0);" class="dropdown-toggle dropdown-hover" data-toggle="dropdown">
                             <span class="meta">
-                                <span class="avatar"><img src="<?php echo $host?>asset/image/avatar/avatar7.jpg" class="img-circle" alt="" /></span>
+                                <span class="avatar"><img src="<?php echo $host?>/asset/image/avatar/avatar7.jpg" class="img-circle" alt="" /></span>
                                 <span class="text hidden-xs hidden-sm pl5">Erich Reyes</span>
                                 <span class="caret"></span>
                             </span>
@@ -612,14 +612,14 @@
                             <!-- indicator -->
                             <div class="indicator"><span class="spinner"></span></div>
                             <!--/ indicator -->
-                            <img data-toggle="unveil" src="<?php echo $host?>asset/image/background/400x250/placeholder.jpg" data-src="<?php echo $host?>asset/image/background/400x250/background3.jpg" alt="Cover" width="100%">
+                            <img data-toggle="unveil" src="<?php echo $host?>/asset/image/background/400x250/placeholder.jpg" data-src="<?php echo $host?>/asset/image/background/400x250/background3.jpg" alt="Cover" width="100%">
                         </div>
                         <!--/ media -->
                     </div>
                     <!--/ thumbnail -->
                 </div>
                 <div class="panel-body text-center" style="margin-top:-55px;z-index:11">
-                    <img class="img-circle mb5" src="<?php echo $host?>asset/image/avatar/avatar7.jpg" alt="" width="75">
+                    <img class="img-circle mb5" src="<?php echo $host?>/asset/image/avatar/avatar7.jpg" alt="" width="75">
                     <h5 class="bold mt0 mb5">Erich Reyes</h5>
                     <p>Administrator</p>
                     <button type="button" class="btn btn-primary offcanvas-opener offcanvas-open-ltr"><i class="ico-settings"></i> Settings</button>
@@ -631,7 +631,7 @@
                     <h5 class="heading pa15 pb0">Family</h5>
                     <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
                         <span class="media-object pull-left">
-                            <img src="<?php echo $host?>asset/image/avatar/avatar1.jpg" class="img-circle" alt="">
+                            <img src="<?php echo $host?>/asset/image/avatar/avatar1.jpg" class="img-circle" alt="">
                         </span>
                         <span class="media-body">
                             <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Autumn Barker</span>
@@ -640,7 +640,7 @@
                     </a>
                     <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
                         <span class="media-object pull-left">
-                            <img src="<?php echo $host?>asset/image/avatar/avatar2.jpg" class="img-circle" alt="">
+                            <img src="<?php echo $host?>/asset/image/avatar/avatar2.jpg" class="img-circle" alt="">
                         </span>
                         <span class="media-body">
                             <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Giselle Horn</span>
@@ -649,7 +649,7 @@
                     </a>
                     <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
                         <span class="media-object pull-left">
-                            <img src="<?php echo $host?>asset/image/avatar/avatar.png" class="img-circle" alt="">
+                            <img src="<?php echo $host?>/asset/image/avatar/avatar.png" class="img-circle" alt="">
                         </span>
                         <span class="media-body">
                             <span class="media-heading"><span class="hasnotification hasnotification-danger mr5"></span> Austin Shields</span>
@@ -658,7 +658,7 @@
                     </a>
                     <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
                         <span class="media-object pull-left">
-                            <img src="<?php echo $host?>asset/image/avatar/avatar.png" class="img-circle" alt="">
+                            <img src="<?php echo $host?>/asset/image/avatar/avatar.png" class="img-circle" alt="">
                         </span>
                         <span class="media-body">
                             <span class="media-heading"><span class="hasnotification hasnotification-danger mr5"></span> Caryn Gibson</span>
@@ -667,7 +667,7 @@
                     </a>
                     <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
                         <span class="media-object pull-left">
-                            <img src="<?php echo $host?>asset/image/avatar/avatar3.jpg" class="img-circle" alt="">
+                            <img src="<?php echo $host?>/asset/image/avatar/avatar3.jpg" class="img-circle" alt="">
                         </span>
                         <span class="media-body">
                             <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Nash Evans</span>
@@ -678,7 +678,7 @@
                     <h5 class="heading pa15 pb0">Friends</h5>
                     <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
                         <span class="media-object pull-left">
-                            <img src="<?php echo $host?>asset/image/avatar/avatar4.jpg" class="img-circle" alt="">
+                            <img src="<?php echo $host?>/asset/image/avatar/avatar4.jpg" class="img-circle" alt="">
                         </span>
                         <span class="media-body">
                             <span class="media-heading"><span class="hasnotification hasnotification-default mr5"></span> Josiah Johnson</span>
@@ -687,7 +687,7 @@
                     </a>
                     <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
                         <span class="media-object pull-left">
-                            <img src="<?php echo $host?>asset/image/avatar/avatar.png" class="img-circle" alt="">
+                            <img src="<?php echo $host?>/asset/image/avatar/avatar.png" class="img-circle" alt="">
                         </span>
                         <span class="media-body">
                             <span class="media-heading"><span class="hasnotification hasnotification-default mr5"></span> Philip Hewitt</span>
@@ -696,7 +696,7 @@
                     </a>
                     <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
                         <span class="media-object pull-left">
-                            <img src="<?php echo $host?>asset/image/avatar/avatar5.jpg" class="img-circle" alt="">
+                            <img src="<?php echo $host?>/asset/image/avatar/avatar5.jpg" class="img-circle" alt="">
                         </span>
                         <span class="media-body">
                             <span class="media-heading"><span class="hasnotification hasnotification-default mr5"></span> Wilma Hunt</span>
@@ -705,7 +705,7 @@
                     </a>
                     <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
                         <span class="media-object pull-left">
-                            <img src="<?php echo $host?>asset/image/avatar/avatar6.jpg" class="img-circle" alt="">
+                            <img src="<?php echo $host?>/asset/image/avatar/avatar6.jpg" class="img-circle" alt="">
                         </span>
                         <span class="media-body">
                             <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Noah Gill</span>
@@ -716,7 +716,7 @@
                     <h5 class="heading pa15 pb0">Others</h5>
                     <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
                         <span class="media-object pull-left">
-                            <img src="<?php echo $host?>asset/image/avatar/avatar8.jpg" class="img-circle" alt="">
+                            <img src="<?php echo $host?>/asset/image/avatar/avatar8.jpg" class="img-circle" alt="">
                         </span>
                         <span class="media-body">
                             <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> David Fisher</span>
@@ -725,7 +725,7 @@
                     </a>
                     <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
                         <span class="media-object pull-left">
-                            <img src="<?php echo $host?>asset/image/avatar/avatar9.jpg" class="img-circle" alt="">
+                            <img src="<?php echo $host?>/asset/image/avatar/avatar9.jpg" class="img-circle" alt="">
                         </span>
                         <span class="media-body">
                             <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Samantha Avery</span>
@@ -734,7 +734,7 @@
                     </a>
                     <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
                         <span class="media-object pull-left">
-                            <img src="<?php echo $host?>asset/image/avatar/avatar.png" class="img-circle" alt="">
+                            <img src="<?php echo $host?>/asset/image/avatar/avatar.png" class="img-circle" alt="">
                         </span>
                         <span class="media-body">
                             <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Madaline Medina</span>
@@ -781,7 +781,7 @@
                             <ul class="media-list media-list-bubble">
                             <li class="media media-right">
                                 <a href="javascript:void(0);" class="media-object">
-                                    <img src="<?php echo $host?>asset/image/avatar/avatar7.jpg" class="img-circle" alt="">
+                                    <img src="<?php echo $host?>/asset/image/avatar/avatar7.jpg" class="img-circle" alt="">
                                 </a>
                                 <div class="media-body">
                                     <p class="media-text">eros non enim commodo hendrerit.</p>
@@ -796,7 +796,7 @@
                             </li>
                             <li class="media">
                                 <a href="javascript:void(0);" class="media-object">
-                                    <img src="<?php echo $host?>asset/image/avatar/avatar6.jpg" class="img-circle" alt="">
+                                    <img src="<?php echo $host?>/asset/image/avatar/avatar6.jpg" class="img-circle" alt="">
                                 </a>
                                 <div class="media-body">
                                     <p class="media-text">Etiam laoreet, libero et tristique pellentesque, tellus sem mollis dui, in sodales elit erat.</p>
@@ -809,7 +809,7 @@
                             </li>
                             <li class="media media-right">
                                 <a href="javascript:void(0);" class="media-object">
-                                    <img src="<?php echo $host?>asset/image/avatar/avatar7.jpg" class="img-circle" alt="">
+                                    <img src="<?php echo $host?>/asset/image/avatar/avatar7.jpg" class="img-circle" alt="">
                                 </a>
                                 <div class="media-body">
                                     <p class="media-text">Duis a mi fringilla mi lacinia mattis. Integer</p>
@@ -820,7 +820,7 @@
                             </li>
                             <li class="media">
                                 <a href="javascript:void(0);" class="media-object">
-                                    <img src="<?php echo $host?>asset/image/avatar/avatar6.jpg" class="img-circle" alt="">
+                                    <img src="<?php echo $host?>/asset/image/avatar/avatar6.jpg" class="img-circle" alt="">
                                 </a>
                                 <div class="media-body">
                                     <p class="media-text">Praesent interdum ligula eu enim. Etiam imperdiet dictum magna.</p>
@@ -831,7 +831,7 @@
                             </li>
                             <li class="media media-right">
                                 <a href="javascript:void(0);" class="media-object">
-                                    <img src="<?php echo $host?>asset/image/avatar/avatar7.jpg" class="img-circle" alt="">
+                                    <img src="<?php echo $host?>/asset/image/avatar/avatar7.jpg" class="img-circle" alt="">
                                 </a>
                                 <div class="media-body">
                                     <p class="media-text">Aliquam rutrum lorem ac risus. Morbi metus. Vivamus euismod urna.</p>
@@ -842,7 +842,7 @@
                             </li>
                             <li class="media">
                                 <a href="javascript:void(0);" class="media-object">
-                                    <img src="<?php echo $host?>asset/image/avatar/avatar6.jpg" class="img-circle" alt="">
+                                    <img src="<?php echo $host?>/asset/image/avatar/avatar6.jpg" class="img-circle" alt="">
                                 </a>
                                 <div class="media-body">
                                     <p class="media-text">Vestibulum accumsan neque et nunc. Quisque ornare tortor at risus. Nunc ac</p>
@@ -883,7 +883,7 @@
             include 'view/product-create.php';
         }
         // Created by zaenur
-        if ($_GET['page'] == "queue-list") {
+        if ($_GET['page'] == "merchant-queue-list") {
             include 'controller/read-queue-list.php';
             include 'view/merchant-queue-list.php';
         }
@@ -903,9 +903,9 @@
 
         <!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
         <!-- Application and vendor script : mandatory -->
-        <script type="text/javascript" src="<?php echo $host?>asset/javascript/vendor.js"></script>
-        <script type="text/javascript" src="<?php echo $host?>asset/javascript/core.js"></script>
-        <script type="text/javascript" src="<?php echo $host?>asset/javascript/backend/app.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/javascript/vendor.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/javascript/core.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/javascript/backend/app.js"></script>
         <!--/ Application and vendor script : mandatory -->
 
         <!-- Plugins and page level script : optional -->
@@ -913,22 +913,22 @@
     if(isset($_GET['page'])):?>
 <?php
         if($_GET['page'] == "dashboard"):?>
-        <script type="text/javascript" src="<?php echo $host?>asset/plugins/flot/js/jquery.flot.js"></script>
-        <script type="text/javascript" src="<?php echo $host?>asset/plugins/flot/js/jquery.flot.resize.js"></script>
-        <script type="text/javascript" src="<?php echo $host?>asset/plugins/flot/js/jquery.flot.categories.js"></script>
-        <script type="text/javascript" src="<?php echo $host?>asset/plugins/flot/js/jquery.flot.time.js"></script>
-        <script type="text/javascript" src="<?php echo $host?>asset/plugins/flot/js/jquery.flot.tooltip.js"></script>
-        <script type="text/javascript" src="<?php echo $host?>asset/plugins/flot/js/jquery.flot.spline.js"></script>
-        <script type="text/javascript" src="<?php echo $host?>asset/plugins/owl/js/owl.carousel.js"></script>
-        <script type="text/javascript" src="<?php echo $host?>asset/plugins/datatables/js/jquery.dataTables.js"></script>
-        <script type="text/javascript" src="<?php echo $host?>asset/plugins/datatables/js/datatables-bs3.js"></script>
-        <script type="text/javascript" src="<?php echo $host?>asset/plugins/jqvmap/js/jquery.vmap.js"></script>
-        <script type="text/javascript" src="<?php echo $host?>asset/javascript/backend/pages/dashboard-v2.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/plugins/flot/js/jquery.flot.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/plugins/flot/js/jquery.flot.resize.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/plugins/flot/js/jquery.flot.categories.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/plugins/flot/js/jquery.flot.time.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/plugins/flot/js/jquery.flot.tooltip.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/plugins/flot/js/jquery.flot.spline.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/plugins/owl/js/owl.carousel.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/plugins/datatables/js/jquery.dataTables.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/plugins/datatables/js/datatables-bs3.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/plugins/jqvmap/js/jquery.vmap.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/javascript/backend/pages/dashboard-v2.js"></script>
     <?php
         endif?>
     <?php
         if($_GET['page'] == "products"):?>
-        <script type="text/javascript" src="<?php echo $host?>asset/javascript/backend/tables/default.js"></script>
+        <script type="text/javascript" src="<?php echo $host?>/asset/javascript/backend/tables/default.js"></script>
     <?php
         endif?>
 		<!-- Created by Edi -->
