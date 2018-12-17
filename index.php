@@ -7,7 +7,7 @@
     <!-- START Head -->
     <head>
         <!-- START META SECTION -->
-        <a href="login/login.php"><button>Go To Login</button></a>
+        <!--<a href="login/login.php"><button>Go To Login</button></a>-->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>President Mart</title>
@@ -870,6 +870,12 @@
     <section id="main" role="main">
         <div class="container-fluid">
 <?php
+    if(empty($_SESSION['name'])) {
+        echo "Anda belum Login";
+    } else {
+        echo "Anda sedang login";
+    }
+
     if(isset($_GET['page'])) {
         if($_GET['page'] == "dashboard") {
             include 'view/dashboard.php';
@@ -897,6 +903,16 @@
         if($_GET['page'] == "shopping-cart"){
             include 'controller/read-shopping-cart.php';
             include 'view/shopping-cart.php';
+        }
+        if ($_GET['page'] == "sign-up") {
+            include 'view/sign-up.php';
+        }
+        if ($_GET['page'] == "sign-in") {
+            include 'view/sign-in.php';
+        }
+        if ($_GET['page'] == "sign-out") {
+            session_destroy();
+            echo "Berhasil Logout";
         }
     } else { // Updated by Edi
         include 'controller/read-product.php';
