@@ -22,11 +22,17 @@
 <?php
     if(isset($_GET['page'])):?>
     <?php
+        if ($_GET['page'] == "item-detail"):?>
+        <link rel="stylesheet" href="<?php echo $host?>/asset/plugins/layerslider/css/layerslider.css">
+        <link rel="stylesheet" href="<?php echo $host?>/asset/plugins/touchspin/css/touchspin.css">
+    <?php
+        endif?>
+    <?php
         if($_GET['page'] == "dashboard"):?>
-        <link rel="stylesheet" href="<?php echo $host?>asset/plugins/flot/css/flot.css">
-        <link rel="stylesheet" href="<?php echo $host?>asset/plugins/owl/css/owl-carousel.css">
-        <link rel="stylesheet" href="<?php echo $host?>asset/plugins/datatables/css/datatables.css">
-        <link rel="stylesheet" href="<?php echo $host?>asset/plugins/jqvmap/css/jqvmap.css">
+        <link rel="stylesheet" href="<?php echo $host?>/asset/plugins/flot/css/flot.css">
+        <link rel="stylesheet" href="<?php echo $host?>/asset/plugins/owl/css/owl-carousel.css">
+        <link rel="stylesheet" href="<?php echo $host?>/asset/plugins/datatables/css/datatables.css">
+        <link rel="stylesheet" href="<?php echo $host?>/asset/plugins/jqvmap/css/jqvmap.css">
     <?php
         endif?>
 <?php

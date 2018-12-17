@@ -36,7 +36,7 @@
                                             <a href="#" class="btn btn-primary"><i class="ico-cart-add fsize14"></i>&nbsp;&nbsp;Add to cart</a>
                                         </li>
                                         <li class="text-right">
-                                            <a href="shop-item-detail.html" class="btn btn-link text-default"><i class="ico-list-ul fsize14"></i>&nbsp;&nbsp;Item detail</a>
+                                            <a href="<?php echo $host . '?page=item-detail&id=' . $row['id']?>" class="btn btn-link text-default"><i class="ico-list-ul fsize14"></i>&nbsp;&nbsp;Item detail</a>
                                         </li>
                                     </ul>
                                 </div>
