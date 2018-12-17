@@ -54,9 +54,7 @@
         <!-- END STYLESHEETS -->
     </head>
     <!--/ END Head -->
-<?php
-    $id = $_GET['id'];
-?>
+
     <!-- START Body -->
     <body>
         <!-- START Template Header -->
